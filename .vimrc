@@ -14,7 +14,7 @@ set number 	"show line numbers
 set showmatch "highlight matching braces/brackets/parents
 set showcmd 	"show command bar
 
-filetype indent on " load filetype-specific indent files
+filetype plugin indent on " load filetype-specific indent files
 
 set wildmenu " visual autocomplete for command menu
 
@@ -27,3 +27,5 @@ let mapleader=","
 nnoremap <leader><space> :nohlsearch<CR>
 " toggle gundo
 nnoremap <F5> :GundoToggle<CR>
+
+au BufRead,BufNewFile *.go set filetype=go
